@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reagile</title>
+<link href="My Styles/My Stylessheet.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+	
+	<div id="main">
+		<video autoplay loop muted plays-inline id="backvideo">
+		 <source src="My Images/backgroundvid1.mp4" type="backgroundvid1.mp4"/>
+		</video>
+	<div id="icon"> <a href="index.html"><img alt src="My Images/rea logo.png" width="190" height="115"></a>	
+      </div>
+	<div id="nav">
+		<ul id="menuList">
+	   <ul>
+		    <li><a href="Index.html">HOME</a></li>
+		    <li><a href="Profile.html">PROFILE</a></li>
+		    <li><a href="Portfolio.html">PORTFOLIO</a>
+		        <ul id="dropdown">
+				<li><a href="logo design.html">BRANDING</a></li>
+				<li><a href="illustrations.html">ILLUSTRATIONS</a></li>
+				<li><a href="video editing.html">VIDEO EDITING</a></li>
+				<li><a href="ui design.html">PHOTOGRAPHY</a></li>
+				</ul>
+				</li>
+		    <li><a href="Contact Me.html">CONTACT ME</a></li>
+	   </ul>
+	</ul>
+		
+	</div>
+     <div id="content">
+		<h1>HELLO;)</h1>
+		 <a href="Portfolio.html">Explore</a>
+	 </div>
+    </div>
+	<script>
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+	
+	function togglemenu(){
+	
+	  if(menuList.style.maxHeight == "0px")
+	{ 
+	  menuList.style.maxHeight = "130px";
+	}
+	  else
+	  {
+		menuList.style.maxHeight = "0px";
+	  }
+	}
+		</script>
+	<div class="icons">
+				 <a href="https://www.facebook.com/reagile.masemola.98"><ion-icon name="logo-facebook"></ion-icon></a>
+					 <a href="https://www.linkedin.com/in/reagile-masemola-83308b184/"><ion-icon name="logo-linkedin"></ion-icon></a>
+					 <a href="https://www.instagram.com/r.eagile/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+				 </div>
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script><script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

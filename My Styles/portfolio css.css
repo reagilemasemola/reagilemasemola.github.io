@@ -1,0 +1,113 @@
+@charset "utf-8";
+html{
+	scroll-behavior: smooth;
+}
+body{
+	width: auto;
+	height:100px;
+	background-color: #1C0D1D;
+	overflow-x: hidden;
+
+}
+*{
+	margin:0;
+	padding:0;
+ }
+#nav{
+	height: 250px;
+	width:50;
+}
+#nav ul{
+	float:right;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#nav ul li{
+	list-style: none;
+	margin-right: 150px;
+	margin-top: 50px;
+	font-size: 14px;
+}
+#nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-family: arial;
+	font-size:30px;
+	font-weight:600;
+	transition:0.4s ease-in-out;
+}
+#nav ul li a:hover{
+    color:rgba(158,100,170,1.00);
+	text-shadow: 5px 5px 5px #000;
+}
+#dropdown{
+	width: 200px;
+	display: block;
+	position: absolute;
+	border-top: 4px solid #fff;
+	z-index: 100;
+	top:100px;
+	transition:all 650ms ease;
+	opacity:0;
+	visibility:visible;
+	text-align: left;
+}
+#dropdown::before{
+	content:"";
+	position: absolute;
+	border-bottom-color:#fff;
+}
+#dropdown ul{
+	line-height: 80px;
+	margin-left:0px;
+}
+#menuList li:hover> #dropdown{
+	margin-right:2px;
+	opacity: 1;
+	visibility: visible;
+	display:inherit;
+}
+#icon{
+	width:auto;
+	height:70px;
+	float:left;
+	margin-top: 20px;
+	margin-left: 40px;
+	filter: invert(100%);
+}
+#main{
+	width:auto;
+	height:109vh;
+	background:linear-gradient(to top,rgba(0,0,0,0.8)80%,rgba(0,0,0,0.9)90%), url("../My Images/pexels-designecologist-1779487.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+h1{
+    color:rgba(158,100,170,1.00);
+	font-family:Vogue;
+	text-align: center;
+	font-size: 55pt;
+	margin:20px;
+	padding: 250px 100px 0px 10px;
+}
+
+h2{
+	margin:100px;
+	text-align: center;	
+}
+.icons a{
+	text-decoration: none;
+	color:#fff;
+}
+.icons ion-icon{
+	color:#B68CD3;
+	font-size:30px;
+	transition: 0.3s ease;
+	margin-top:90px;
+	margin-left:650px;
+}
+.icons ion-icon:hover{
+	color:#fff;
+}
